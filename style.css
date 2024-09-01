@@ -1,0 +1,212 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+*{
+    background-color: rgb(5, 5, 5);
+    color: aliceblue;
+    margin: none;
+}
+header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgba(252, 148, 20, 0.87);
+    color: rgb(41, 40, 37);
+    width: 100%;
+    height: 60px;
+    margin: none;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 5px;
+}
+
+
+h1, h2{
+    text-align: center;
+        font-size: 2em;
+        margin: .67em 0;
+        background-color: transparent;
+}
+h3, h4{
+    background-color: transparent;
+}
+h4{
+    margin-top: none;
+    font-size: 1.2rem;
+}
+section{
+    background-image: url(img/game.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    margin-top: 8px;
+    text-align: center;
+    align-content: center;
+    color: aliceblue;
+}
+.game{
+    display: flex;
+    padding-bottom: 2em;
+    align-items: center;
+    text-align: justify;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border-bottom: solid 1px  rgba(252, 148, 20, 0.87);
+}
+p{
+    background-color: transparent;
+    margin-left: 35px;
+    width: 80%;
+    text-align: left;
+}
+.game2{
+    display: flex;
+    padding: auto;
+    align-items: center;
+    text-align: justify;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    padding-bottom: 2em;
+    border-bottom: solid 1px  rgba(252, 148, 20, 0.87);
+
+}
+.p2{
+    margin-left: 35px;
+    width: 80%;
+    text-align: left;
+    height: auto;
+}
+.img3{
+  width: 50%;
+  height: auto;
+}
+footer{
+    background-color: rgb(241, 145, 26);
+    text-align: center;
+    margin: none;
+    color: azure;
+    align-content: center;
+    width: 100%;
+    height: 3em;
+}
+.footer{
+    text-align: center;
+    margin: none;
+    margin-left: 8%;
+    padding: none;
+    padding-bottom: 2px;
+    align-items: center;
+}
+button{
+    color: rgb(255, 136, 0);
+    background-color: rgb(7, 7, 6);
+    border-radius: 15px;
+    border-color: rgb(236, 151, 47);
+    padding: 7px;
+    margin-top: 2em;
+    align-items: center;
+    text-align: center;
+    margin-left: 40%;
+}
+button:hover{
+    color: rgb(0, 0, 0);
+    background-color:rgb(231, 152, 55) ;
+    border-color: rgb(255, 253, 253);
+}
+a{
+    text-decoration: none;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:  rgba(252, 148, 20, 0.87);
+    height: 8vh;
+  }
+  
+  main {
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 1900px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 30vw;
+      height: 70vh;
+      background: #000000;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
