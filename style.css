@@ -32,7 +32,7 @@ h4{
     font-size: 1.2rem;
 }
 section{
-    background-image: url(img/game.jpg);
+    background-image: url(game.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
